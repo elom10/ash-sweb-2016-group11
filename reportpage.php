@@ -44,17 +44,28 @@
 
 
 
+
+
 <?php
+
 	include_once("report.php");
 	$obj = new report();
 
 	if(isset($_REQUEST['reported'])){
 
+
 		$result = $obj->addReport($_REQUEST['lab'],$_REQUEST['equipment'],$_REQUEST['concern']);
+		if($result){
+			echo"successs";
+		}
 	
 	}else{
 		exit();
 	}
+
+
+
+
 
 ?>
 

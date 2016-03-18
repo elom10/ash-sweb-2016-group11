@@ -1,28 +1,25 @@
 <?php
-include_once("..\users.php");
+include_once("../report.php");
 
-class testAdb extends PHPUnit_Framework_TestCase
+class reportTest extends PHPUnit_Framework_TestCase
 {
-    public function testAddUser()
+    public function testAddReport()
     {
 		// generate test username sername
 		$strTestUsername=random_bytes(10);
-        $obj=new users();
+        $obj=new report();
 		
         $this->assertEquals(true, 
-		$obj->addUser(
+		$obj->addReport(
 			$strTestUsername,// username sername
-			"Firstname",	//firstname
-			"Lastname",		//lastname
-			"1234",			//password
-			3,				//permission
-			1,				//group 
-			1				//status
+		//	"221",	//lab name
+			"air conditioner",		//equipment
+			"does not boot"			//problem
 			));
 			
-		$this->assertEquals(true,$obj->query("select * from users where username='$strTestUsername'"));
+		$this->assertEquals(true,$obj->query("select * from problem where lab='$strTestUsername'"));
 		//count the number of fields
-		$this->assertCount(7,$obj->fetch());
+		$this->assertCount(3,$obj->fetch());
     }
 	
 

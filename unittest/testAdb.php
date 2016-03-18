@@ -15,7 +15,7 @@ class testAdb extends PHPUnit_Framework_TestCase
 	*/
 	public function testQuery($adb)
 	{
-		$this->assertEquals(true,$adb->query("select * from users"));
+		$this->assertEquals(true,$adb->query("select * from problem"));
 		return $adb;
 	}
 	
