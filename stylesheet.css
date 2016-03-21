@@ -1,0 +1,58 @@
+		html,body{
+			font-family:David, sans-serif;
+			background-color:white;
+			margin-left:3px;
+			margin-top: 5px;
+			margin-bottom:2px;   
+			padding:0;    
+			min-height:100%;
+			width:100%;
+}
+
+
+		.centered{
+			position:fixed;
+			top:50%;
+			left:50%;
+			transform:translate(-50%, -50%);
+			}
+			
+		.image{
+			position:fixed;
+			top:30%;
+			left:50%;
+			transform:translate(-50%,-50%);
+			}
+			
+		.body{
+			align:right;
+			height:100%;
+			font-size:15px;
+			}
+			
+		.wrapper{
+			font-size:18;
+			font-family:David;
+			text-align: center;
+			position:relative;
+			}
+			
+		#header{
+			font-size:30;
+			color:#990012;
+			text-align:center;
+			}
+			
+		#reportHeader{
+			height:1in;
+			font-size:15;
+			background-color:#990012;
+			color:white;
+			text-align:center;
+		}
+		
+		/*.reload{
+			position:relative;
+			
+		}
+		*/
