@@ -1,59 +1,32 @@
 <html>
 	<head>
 		<title>Add New User</title>
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="stylesheet.css">
 		<script>
 			<!--add validation js script here
 		</script>
 	</head>
 	<body>
-		<table>
-			<tr>
-				<td colspan="2" id="pageheader">
-					Application Header
-				</td>
-			</tr>
-			<tr>
-				<td id="mainnav">
-					<div class="menuitem">menu 1</div>
-					<div class="menuitem">menu 2</div>
-				</td>
-				<td id="content">
-					<div id="divPageMenu">
-						<span class="menuitem" >page menu 1</span>
-						<input type="text" id="txtSearch" />
-					<!--	<span class="menuitem">search</span>	-->	
-					</div>
-					<div id="divStatus" class="status">
+		<div colspan="2" id="reportHeader">
+						LAB_AID
+		</div>
+					<div id="header">
 						status message
 					</div>
-					<div id="divContent">
-						Content space
+					<div class="centered">
 					<form action="" method="GET">
-						<div>Lab Name: <input type="text" name= "lab" /></div>
-						<div>Equipment: <input type="text" name= "equipment" /></div>
-						<div>Concern: <input type="text" name= "concern"/></div>
-						<input type="submit" name="reported" value="Send report">
+						<div>Lab Name: <input type="text" name= "lab" /></div><br>
+						<div>Equipment: <input type="text" name= "equipment" /></div><br>
+						<div>Concern: <input type="text" name= "concern"/></div><br>
+		</div>
+						<div class ="submit"><input type="submit" name="reported" value="Send report"></div>
 					</form>	
-
-
-
-
-
-
-
-
-
-
-
 <?php
 
 	include_once("report.php");
 	$obj = new report();
 
 	if(isset($_REQUEST['reported'])){
-
-
 		$result = $obj->addReport($_REQUEST['lab'],$_REQUEST['equipment'],$_REQUEST['concern']);
 		if($result){
 			echo"successs";
@@ -62,17 +35,7 @@
 	}else{
 		exit();
 	}
-
-
-
-
-
 ?>
-
-
-					</div>
-				</td>
-			</tr>
-		</table>
+					
 	</body>
 </html>	

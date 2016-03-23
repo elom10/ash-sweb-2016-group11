@@ -8,7 +8,7 @@
 	</head>
 			<body>
 			
-				<div id="header">
+				<div id="interfaceHeader">
 					<h1>LAB_AID</h1>
 				</div>	
 				<div class="wrapper">
@@ -24,9 +24,9 @@
 							<div>Username:<input type="text" name="username" value=""/> </div><br>
 							<div>Password:<input type="text" name="pword" value= "" /></div>
 							<div>sign in as:<input type="checkbox" name="labUsers"value="labUsers">User
-							<input type="checkbox" name="sign in"value="Admin">Admin 
+							<input type="checkbox" name="sign in"value="Admin">Admin</div> 
 					</div>
-						<div class="body"><input type="submit" value="submit"></div>
+						<div class="submit"><input type="submit" value="submit"></div>
 				</form>	
 				<a href="Interface.php">Reload</a>
 			</body>

@@ -1,13 +1,18 @@
-		html,body{
+			html{
 			font-family:David, sans-serif;
 			background-color:white;
-			margin-left:3px;
-			margin-top: 5px;
-			margin-bottom:2px;   
+			width:100%;
+			height:100%;
+			}
+
+			body{
+			margin-left:-3px;
+			margin-top:-1px;
+			margin-bottom:-2px;   
 			padding:0;    
 			min-height:100%;
 			width:100%;
-}
+			}
 
 
 		.centered{
@@ -24,35 +29,51 @@
 			transform:translate(-50%,-50%);
 			}
 			
-		.body{
-			align:right;
-			height:100%;
+		.submit{
+			position:fixed;
+			top:59%;
+			left:57%;
+			transform:translate(-50%, -50%);
 			font-size:15px;
 			}
 			
 		.wrapper{
 			font-size:18;
-			font-family:David;
 			text-align: center;
 			position:relative;
 			}
 			
-		#header{
+		#interfaceHeader{
 			font-size:30;
-			color:#990012;
+			color:white;
 			text-align:center;
+			background-color:#990012;
+		}
+			
+		#header{
+			top:40%;
+			left:50%;
+			font-size:30;
+			color:white;
+			text-align:center;
+			background-color:#990012;
 			}
 			
-		#reportHeader{
-			height:1in;
-			font-size:15;
-			background-color:#990012;
-			color:white;
+		#reportHeader{  
+			top:10%;
+			left:50%;
+			height:1in;    
+			font-size:50;
+			background-color:white;
+			color:#990012;
 			text-align:center;
 		}
 		
-		/*.reload{
-			position:relative;
-			
+		a:link{
+			position:fixed;
+			bottom:5%;
+			right:5%;
+			transform:translate(-50%, -50%);
+			font-size:15px;
 		}
-		*/
+		

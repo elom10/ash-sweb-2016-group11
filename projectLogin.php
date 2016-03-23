@@ -19,6 +19,6 @@
 			echo "Access denied";
 		}
 		else{
-			echo "login successful";
+			header('Location:reportpage.php');
 		}
 ?>
