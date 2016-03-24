@@ -17,7 +17,7 @@ class report extends adb{
 	*/
 	function addReport($lab, $equipment, $concern){
 		$strQuery="insert into problem set
-						LAB='$lab', EQUIPMENT='$equipment',CONCERN='$concern'";
+						LABNAME='$lab', EQUIPMENT='$equipment',CONCERN='$concern'";
 		return $this->query($strQuery);				
 	}
 	
