@@ -1,0 +1,79 @@
+			html{
+			font-family:David, sans-serif;
+			background-color:white;
+			width:100%;
+			height:100%;
+			}
+
+			body{
+			margin-left:-3px;
+			margin-top:-1px;
+			margin-bottom:-2px;   
+			padding:0;    
+			min-height:100%;
+			width:100%;
+			}
+
+
+		.centered{
+			position:fixed;
+			top:50%;
+			left:50%;
+			transform:translate(-50%, -50%);
+			}
+			
+		.image{
+			position:fixed;
+			top:30%;
+			left:50%;
+			transform:translate(-50%,-50%);
+			}
+			
+		.submit{
+			position:fixed;
+			top:59%;
+			left:57%;
+			transform:translate(-50%, -50%);
+			font-size:15px;
+			}
+			
+		.wrapper{
+			font-size:18;
+			text-align: center;
+			position:relative;
+			}
+			
+		#interfaceHeader{
+			font-size:30;
+			color:white;
+			text-align:center;
+			background-color:#990012;
+		}
+			
+		#header{
+			top:40%;
+			left:50%;
+			font-size:30;
+			color:white;
+			text-align:center;
+			background-color:#990012;
+			}
+			
+		#reportHeader{  
+			top:10%;
+			left:50%;
+			height:1in;    
+			font-size:50;
+			background-color:white;
+			color:#990012;
+			text-align:center;
+		}
+		
+		a:link{
+			position:fixed;
+			bottom:5%;
+			right:5%;
+			transform:translate(-50%, -50%);
+			font-size:15px;
+		}
+		
