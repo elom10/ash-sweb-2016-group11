@@ -1,0 +1,271 @@
+/*******************
+NAME: MOMODOU K SOWE
+INDEX: 68772017
+
+LOGIN FORM STYLESHEET
+*/
+#headerBar {
+	border-bottom: 1px solid #e6e6e6;
+    background: #fff;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 999;
+ }
+ #headerBar span {
+	font-color: #b83838;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 30px;
+    text-shadow: none;
+    position: absolute;
+	/*left: 80%;*/
+	top: 50%;
+	margin-left: 1130px;
+	/*float-right: -275px;*/
+	font-family: arial;
+}
+
+.welcomeText p {
+	color: #000;
+    font-size: 24px;
+    line-height: 44px;
+    margin-bottom: 30px;
+    text-shadow: none;
+    position: absolute;
+	/*left: 0%;*/
+	top: 70%;
+	margin-left: 20px;
+	margin-top: -275px;
+	font-family: arial;
+}
+.welcomeText h1 {
+	color: #b83838;
+    font-size: 38px;
+    line-height: 44px;
+    margin-bottom: 30px;
+    text-shadow: none;
+    position: absolute;
+	left: 40%;
+	top: 60%;
+	margin-left: -150px;
+	margin-top: -275px;
+	font-family: arial;
+}
+#wrapper {
+	/* Center wrapper perfectly */
+	width: 300px;
+	height: 400px;
+	position: absolute;
+	left: 85%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -275px;
+	font-family: arial;
+}
+
+/*******************
+LOGIN FORM
+*******************/
+
+.login-form {
+	width: 300px;
+	margin: 0 auto;
+	position: relative;
+	
+	background: #f3f3f3;
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
+
+/*******************
+HEADER
+*******************/
+
+.login-form .header {
+	padding: 40px 30px 30px 30px;
+}
+
+.login-form .header h1 {
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 28px;
+	line-height:34px;
+	color: #414848;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+	margin-bottom: 10px;
+
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.login-form .header span {
+	font-size: 11px;
+	line-height: 16px;
+	color: #678889;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+}
+
+.login-form .header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+/*******************
+CONTENT
+*******************/
+
+.login-form .content {
+	padding: 0 30px 25px 30px;
+}
+
+/* Input field */
+.login-form .content .input {
+	width: 240px;
+	padding: 15px 25px;
+	
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+	font-weight: 400;
+	font-size: 14px;
+	color: #9d9e9e;
+	
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
+
+/* Second input field */
+.login-form .content .password, .login-form .content .pass-icon {
+	margin-top: 25px;
+}
+
+.login-form .content .input:hover {
+	background: #fff;
+	color: #414848;
+}
+
+.login-form .content .input:focus {
+	background: #fff;
+	color: #414848;
+}
+
+.login-form .content span{
+	font-size: 11px;
+	line-height: 16px;
+	color: #414848;
+}
+
+/*******************
+FOOTER
+*******************/
+
+.login-form .footer {
+	padding: 25px 30px 40px 30px;
+	overflow: auto;
+	
+	background: #f3f3f3;
+	border-top: 1px solid #fff;
+	
+}
+
+/* Login button */
+.login-form .footer .button {
+	float:right;
+	padding: 11px 25px;
+	
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 18px;
+	color: #fff;
+	
+	background: #b83838;
+	border: 1px solid #46b3d3;
+	border-radius: 5px;
+	cursor: pointer;
+	
+}
+
+.login-form .footer .button:hover {
+	background: #b83838;
+	border: 1px solid rgba(256,256,256,0.75);
+	
+}
+
+.login-form .footer .button:focus {
+	position: relative;
+	bottom: -1px;
+	
+	background: #b83838;
+}
+
+/* Register as */
+.login-form .footer .register {
+	display: block;
+	float: right;
+	padding: 10px;
+	margin-right: 50px;
+	
+	background: none;
+	border: none;
+	cursor: pointer;
+	
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 18px;
+	color: #414848;
+}
+
+.login-form .footer .register:hover {
+	color: #414848;
+}
+
+.login-form .footer .register:focus {
+	position: relative;
+	bottom: -1px;
+}
+#footerBar{
+    font-size: 14px;
+    text-align: center;
+    color: #e6e6e6;
+    background: #282828;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(40, 40, 40);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+}
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   /*background:#999;*/
+   font-size: 14px;
+    text-align: center;
+    color: #e6e6e6;
+    background: #fff;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(40, 40, 40);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+    font-family: arial;
+}
