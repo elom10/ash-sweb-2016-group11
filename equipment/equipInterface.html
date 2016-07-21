@@ -1,0 +1,52 @@
+<html>
+   <!--@adwoba.bota
+      This code displays the equipment list for uses-->
+   <head>
+      <title>Equipment</title>
+      <link rel="stylesheet" href="../CSS/stylesheet.css">
+      <script type="text/javascript" src="js\jquery-1.12.1.js"></script>
+		<script>
+         <!--add java script-->
+         function search(){
+         var search= document.getElementById("num").value;
+         var ajaxPageUrl="ajaxPage.php?cmd=1&uc="+search;
+         $.ajax(ajaxPageUrl,{ async:true, complete:searchEquipmentComplete});
+         }
+         
+         function searchEquipmentComplete(xhr,status){
+         document.getElementById("divStatus").innerHTML=xhr.responseText;
+         var object= $.parseJSON(xhr.responseText);
+         var counter=0;
+         var html="<center><table><th>Equipment ID</th><th>Equipment</th><th>Laboratory</th></center>";
+         document.getElementById('divStatus').innerHTML=object.equipment.length;
+         while(counter<object.equipment.length){
+         //document.getElementById("divStatus").innerHTML="inside the for loop";
+         html+="<tr><td>"+object.equipment[counter].equipID+"</td><td>"+object.equipment[counter].equipName+"</td><td>"+object.equipment[counter].labName+"</td></tr>";
+         counter++;
+         }
+         html+="</table>";
+         document.getElementById("divStatus").innerHTML=html;
+         }
+         
+		</script>
+   </head>
+   <body>
+      <div class="header">
+         <ul>
+            <li><a href="default.asp">Home</a></li>
+            <li><a href="addEquipment.php">Add Euipment</a></li>
+            <li><a href="equipmentIist.php">Equipment list</a></li>
+            <li style="float:right"><a class="active" href="#logout">Log out</a></li>
+         </ul>
+      </div>
+      <div class="centered">
+         <div id="divStatus"></div>
+         <br>
+         <h2 >Welcome to the equipment page</h2>
+         <p>Search for lab equipment:</p>
+         <!--center--><input type="text" name="txtSearch" id ="num">
+         <input type='submit' onclick="search()" value="search"><!--/center-->
+      </div>
+   </body>
+   <div class="footer">&copy ash_sweb_group11</div>
+</html>

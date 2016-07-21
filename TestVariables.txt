@@ -1,0 +1,24 @@
+Test Variables:
+
+Login Details
+Username: eben.Zdobo
+Password: eben
+Usertpe: user
+
+Username: gloria.kuweke
+Password: 1
+Usertype: admin
+
+Equipment
+Adding an equipment
+Equipment: legos
+Lab:	101
+
+Searching 
+Equipment: projector, cables
+
+Report
+Lab: 101,102,221,222,108,201
+Equipment: projector, computer, cables, glue
+Problem: here write a description of the problem with the equipment 
+

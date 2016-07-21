@@ -1,0 +1,431 @@
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);*/
+
+html{
+    height: 100%;
+    width: 100%;
+    font-family: "Open Sans Light", sans-serif;
+}
+
+
+body{
+    margin-left: 3px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    padding: 0;
+    min-height: 100%;
+    width: 100%;
+    /*background-image: url("images/charllote.jpg");*/
+}
+
+.clickspot{
+	text-decoration:underline;
+	color:blue;
+	cursor:pointer
+}
+.status{
+	background-color:Yellow
+}
+.error{
+	color:Red;
+	background-color:Yellow
+}
+
+.menuitem {
+	text-decoration:none;
+	background-color:#f37520;
+    color:#fff;
+	cursor:hand;
+    border: 1px solid none;
+    width: 80px;
+    border-radius: 1px;
+    margin: 0 auto;
+    margin-left: 10px;
+    padding: 10px
+
+
+}
+.menuitem:hover{
+	text-decoration:underline;
+	cursor:hand;
+	font-weight:bold;
+	background-color:Silver
+}
+
+#pageheader
+{
+    height: 1in;
+    background-color: #FFCC66;
+    font-size: large;
+    text-align: center;
+}
+
+#mainnav{
+	width:2in;
+	vertical-align:top
+}
+
+
+#content {
+	width:11.85in;
+    margin-left: 500px;
+	vertical-align:top;
+	
+}
+
+.reportTable 
+{
+    border:1px;
+    border-collapse:collapse;
+}
+
+.reportTable .header
+{
+    background-color: #CC6600;
+    text-transform: uppercase;
+    color: White;
+}
+
+.reportTable .row1
+{
+    background-color: #FFE0B3;
+}
+
+.reportTable .row2
+{
+    background-color:White;
+}
+
+.reportTable tr:hover
+{
+    background-color:Yellow
+}
+
+.tableForm .label
+{
+    background-color: #CC6600;
+    text-transform:capitalize;
+    color: White;
+    text-align:right;
+}
+
+.tableForm .field
+{
+    background-color: #FFAE35;
+}
+.popupMenu
+{
+    background-color: #DC7518;
+    position: absolute;
+    display:none;
+    width: auto;
+}
+
+.popupMenu div
+{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.popupMenu div:hover
+{
+    color: #FFFFFF;
+    text-decoration: underline;
+    background-color: #CC6600;
+}
+
+.popupForm
+{
+    background-color: #DC7518;
+    position: absolute;
+    display:none;
+    width: auto;
+}
+
+table.container {
+   width: 100%;
+    min-height: 100%;
+}
+
+#sidemenu {
+    background-color: #272727;
+    color: aliceblue;
+    vertical-align: top;
+    z-index: 999;
+    padding: 0px;
+    margin-top: -20px;
+    padding-top:60px;
+    cursor: hand;
+    width: 12%;
+    min-width: 150px;
+    height: 100%;
+    border: 1px solid none;
+}
+
+.sideMenuItem {
+    text-align: center;
+    border: 1px solid none;
+    text-decoration-color: #fff;
+    padding: 10px 0px 10px 0px;
+}
+.sideMenuItem i{
+    font-size: 1.6em;
+}
+
+.sideMenuItem:hover{
+   color:#F37520;
+   border-right: 3px solid #F37520;
+    transition:color 0.5s ease;
+    -o-transition:color 0.5s ease;
+    -webkit-transition:color 0.5s ease;
+    -moz-transition:color 0.5s ease;
+    transition:border-right 0.5s ease;
+    -o-transition:border-right 0.5s ease;
+    -webkit-transition:border-right 0.5s ease;
+    -moz-transition:border-right 0.5s ease;
+
+}
+
+.sideMenuItem:before{
+   color:#F37520;
+   border-right: 3px solid #F37520;
+    transition:color 0.5s ease-out;
+    -o-transition:color 0.5s ease-out;
+    -webkit-transition:color 0.5s ease-out;
+    -moz-transition:color 0.5s ease-out;
+    transition:border-right 0.5s ease-out;
+    -o-transition:border-right 0.5s ease-out;
+    -webkit-transition:border-right 0.5s ease-out;
+    -moz-transition:border-right 0.5s ease-out;
+
+}
+
+
+
+
+#divPageMenu {
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+ #headerBar {
+
+   width: 100%;
+   float: left;
+   background-color: #f2f2f2;
+   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0);*/
+  }
+
+#logo{
+    float:left;
+    width: 50%;
+   
+}
+#logo img{
+    float:left;
+    height: 50px; 
+    width: 100px;
+    margin-left: 4%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#menu{
+    float:left;
+    width: 50%;
+}
+#menu ul li{
+    float: left;
+    padding: 8px;
+    color: white;
+}
+#menu ul li :hover{
+    color: red;
+}
+#menu ul{
+    float: right;
+    margin-right: 5%;
+}
+#welcomeText p {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: black;
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+#welcomeText h1 {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #66e0ff;
+    margin-bottom: -30px;
+    
+}
+#wrapper {
+    /* Center wrapper perfectly */
+    width: 300px;
+    height: 300px;
+    position: relative;
+    width: 100%;
+}
+
+/*******************
+LOGIN FORM
+*******************/
+
+.login-form {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    background: #f3f3f3;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+/*******************
+HEADER
+*******************/
+
+.login-form .header {
+    padding: 40px 30px 30px 30px;
+}
+
+.login-form .header h1 {
+    font-family: 'Bree Serif', serif;
+    font-weight: 300;
+    font-size: 28px;
+    line-height:34px;
+    color: #414848;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+    margin-top: -30px;
+    text-align: center; 
+
+}
+
+
+/*******************
+CONTENT
+*******************/
+
+.login-form .content {
+    padding: 0 30px 25px 30px;
+}
+
+/* Input field */
+.login-form .content .input {
+    width: 240px;
+    padding: 15px 25px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+    font-weight: 400;
+    font-size: 14px;
+    color: #9d9e9e;
+    background: #fff;
+    border: 1px solid #fff;
+    margin-top: -25px;
+    border-radius: 5px;
+}
+
+/* Second input field */
+.login-form .content .password, .login-form .content .pass-icon {
+    margin-top: 10px;
+}
+
+.login-form .content .input:hover {
+    background: #fff;
+    color: #414848;
+}
+
+.login-form .content .input:focus {
+    background: #fff;
+    color: #414848;
+}
+
+.login-form .content span{
+    font-size: 11px;
+    line-height: 16px;
+    color: #414848;
+}
+
+/*******************
+FOOTER
+*******************/
+
+.login-form .footer {
+    padding: 25px 30px 40px 30px;
+    overflow: auto;
+    background: #f3f3f3;
+    border-top: 1px solid #fff;
+    margin-top: -60px;
+    
+}
+
+/* Login button */
+.login-form .footer .button {
+    float:right;
+    padding: 11px 25px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+    background: #66e0ff;
+    border: 1px solid #46b3d3;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.login-form .footer .button:hover {
+    background: #b83838;
+    border: 1px solid rgba(256,256,256,0.75);
+    
+}
+
+.login-form .footer .button:focus {
+    position: relative;
+    bottom: -1px;
+    background: #b83838;
+}
+
+/* Register as */
+.login-form .footer .register {
+    display: block;
+    float: right;
+    padding: 10px;
+    margin-right: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Bree Serif', serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #414848;
+}
+
+.login-form .footer .register:hover {
+    color: #414848;
+}
+
+.login-form .footer .register:focus {
+    position: relative;
+    bottom: -1px;
+}
+
+ #footer {
+   width: 100%;
+   float: left;
+   background-color: white;
+   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0);*/
+   position:relative;
+   height: 100px;
+   bottom:0px;
+   font-size: 14px;
+
+  }
+  #footer h4{
+   float: left;
+   color: white;
+   margin-left: 1%;
+  }
